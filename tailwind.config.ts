@@ -13,6 +13,7 @@ export default {
         primary: "#9748fd",
         secondary: "#2c2c2c",
       },
+      fontFamily: {},
     },
   },
   plugins: [],
