@@ -24,7 +24,8 @@ const HeroSection = () => {
           {/* Right div */}
           <div className="lg:w-1/2 w-[95%] flex flex-col p-2 mt-10 lg:p-5">
             <p className="text-4xl text-white">Hi, I’m</p>
-            <AnimatePresence mode="wait">
+            <div className={"w-full h-[15vh] items-center flex"}>
+            <AnimatePresence mode="wait" >
               <motion.h1
                 key={titles[index]}
                 initial={{ opacity: 0, y: 10 }}
@@ -36,6 +37,7 @@ const HeroSection = () => {
                 {titles[index]}
               </motion.h1>
             </AnimatePresence>
+            </div>
             <p className="text-white mt-4 text-sm">
               A mobile and web app developer with 2 years of experience building
               modern applications using React.js, Next.js, Node.js, TailwindCSS,
