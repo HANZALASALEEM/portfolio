@@ -57,7 +57,7 @@ const Navbar = () => {
       </nav>
 
       {/* For Small Screens */}
-      <nav className="fixed bottom-2 min-[850px]:hidden w-full bg-background z-50">
+      <nav className="fixed bottom-2 min-[850px]:hidden w-full bg-transparent z-50">
         <div className="flex justify-center">
           <div className="gap-3 px-6 py-1 bg-primary flex justify-evenly items-center rounded-full w-[90%] max-w-sm shadow-md">
             <a
