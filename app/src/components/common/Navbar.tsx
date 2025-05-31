@@ -4,11 +4,11 @@ const Navbar = () => {
       {/* For Large Screens */}
       <nav className="w-full hidden min-[850px]:flex bg-secondary items-center justify-center h-[70px] z-50">
         <div className="w-1/6 min-[1100px]:w-1/4  flex justify-center items-center">
-          <div className="w-[95%] h-1 bg-primary rounded-full" />
+          <div className="w-[95%] h-1 bg-primary rounded-full shadow-primary" />
         </div>
         <div className="w-4/6 min-[1100px]:w-1/2 flex justify-center items-center">
           <ul className="flex w-full justify-evenly items-center">
-            <li className="group py-1 rounded-full px-6 bg-secondary hover:bg-primary transition-colors duration-300">
+            <li className="group py-1 rounded-full px-6 bg-secondary hover:bg-primary hover:shadow-primary transition-colors duration-300">
               <a
                 href="#home"
                 className="text-primary group-hover:text-white transition-colors duration-300"
@@ -17,7 +17,7 @@ const Navbar = () => {
               </a>
             </li>
 
-            <li className="group py-1 rounded-full px-6 bg-secondary hover:bg-primary transition-colors duration-300">
+            <li className="group py-1 rounded-full px-6 bg-secondary hover:bg-primary hover:shadow-primary transition-colors duration-300">
               <a
                 href="#about"
                 className="text-primary group-hover:text-white transition-colors duration-300"
@@ -25,7 +25,7 @@ const Navbar = () => {
                 About
               </a>
             </li>
-            <li className="group py-1 rounded-full px-6 bg-secondary hover:bg-primary transition-colors duration-300">
+            <li className="group py-1 rounded-full px-6 bg-secondary hover:bg-primary hover:shadow-primary transition-colors duration-300">
               <a
                 href="#projects"
                 className="text-primary group-hover:text-white transition-colors duration-300"
@@ -33,7 +33,7 @@ const Navbar = () => {
                 Projects
               </a>
             </li>
-            <li className="group py-1 rounded-full px-6 bg-secondary hover:bg-primary transition-colors duration-300">
+            <li className="group py-1 rounded-full px-6 bg-secondary hover:bg-primary hover:shadow-primary transition-colors duration-300">
               <a
                 href="#services"
                 className="text-primary group-hover:text-white transition-colors duration-300"
@@ -41,7 +41,7 @@ const Navbar = () => {
                 Services
               </a>
             </li>
-            <li className="group py-1 rounded-full px-6 bg-secondary hover:bg-primary transition-colors duration-300">
+            <li className="group py-1 rounded-full px-6 bg-secondary hover:bg-primary hover:shadow-primary transition-colors duration-300">
               <a
                 href="#contact"
                 className="text-primary group-hover:text-white transition-colors duration-300"
@@ -52,14 +52,14 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="w-1/6 min-[1100px]:w-1/4 flex justify-center items-center">
-          <div className="w-[95%] h-1 bg-primary rounded-full" />
+          <div className="w-[95%] h-1 bg-primary rounded-full shadow-primary" />
         </div>
       </nav>
 
       {/* For Small Screens */}
       <nav className="fixed bottom-2 min-[850px]:hidden w-full bg-transparent z-50">
         <div className="flex justify-center">
-          <div className="gap-3 px-6 py-1 bg-primary flex justify-evenly items-center rounded-full w-[90%] max-w-sm shadow-md">
+          <div className="gap-3 px-6 py-1 bg-primary shadow-primary flex justify-evenly items-center rounded-full w-[90%] max-w-sm shadow-md">
             <a
               href="#home"
               className="flex flex-col items-center text-background hover:text-white transition-colors"

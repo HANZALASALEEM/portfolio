@@ -1,17 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Star from "../homePageComponents/Star";
-import SkillCompound from "../homePageComponents/SkillCompound";
-import ReactIcon from "../../assets/images/icons/ReactIcon";
-import TailwindIcon from "../../assets/images/icons/TailwindIcon";
-import HtmlIcon from "../../assets/images/icons/HtmlIcon";
-import NextIcon from "../../assets/images/icons/NextIcon";
-import TypescriptIcon from "../../assets/images/icons/TypescriptIcon";
 import Divider from "../../assets/images/icons/Divider";
 import IconButton from "../common/IconButton";
 import LikeIcon from "../../assets/images/icons/LikeIcon";
 import DownloadIcon from "../../assets/images/icons/DownloadIcon";
+import VerticalLanguageDesign from "../homePageComponents/VerticalLanguageDesign";
+import HorizontalLanguageDesign from "../homePageComponents/HorizontalLanguageDesign";
+import StrightLanguageDesign from "../homePageComponents/StrightLanguageDesign";
 
 const titles = ["HANZALA SALEEM", "Website Developer", "Mobile App Developer"];
 
@@ -32,7 +28,11 @@ const HeroSection = () => {
         <div className="w-[90%] flex flex-col lg:flex-row justify-center items-center py-10">
           {/* Left div */}
           <div className="lg:w-1/2 w-[95%] flex flex-col p-2 mt-10 lg:p-5 items-center justify-center">
-            <div className={"w-full h-[15vh] sm:h-[10vh] items-center flex"}>
+            <div
+              className={
+                "w-full h-[15vh] sm:h-[10vh] items-center justify-center flex"
+              }
+            >
               <AnimatePresence mode="wait">
                 <motion.h1
                   key={titles[index]}
@@ -40,13 +40,13 @@ const HeroSection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.5 }}
-                  className="text-4xl text-primary font-bold"
+                  className="text-5xl text-center text-primary font-bold"
                 >
                   {titles[index]}
                 </motion.h1>
               </AnimatePresence>
             </div>
-            <div className="py-1 w-full items-center flex">
+            {/* <div className="py-1 w-full items-center flex">
               <p className="text-white text-sm md:text-lg flex flex-wrap">
                 I&apos;m Hanzala Saleem, a passionate developer specializing in
                 modern web and mobile solutions. With expertise in building
@@ -54,43 +54,41 @@ const HeroSection = () => {
                 create high-performance digital experiences using technologies
                 like React.js, Next.js, and React Native.
               </p>
-            </div>
+            </div> */}
             {/* Buttons */}
             <div className="my-5 w-full flex flex-col items-center justify-center">
-              <div className="flex items-center justify-center flex-col shadow-[0_0_10px_rgba(106,53,255,1)] min-[450px]:bg-primary min-[450px]:flex-row min-[450px]:py-2 min-[450px]:px-4 min-[450px]:rounded-full space-y-1 min-[450px]:space-y-0 min-[450px]:space-x-2">
+              <div className="flex items-center justify-center flex-col min-[450px]:shadow-[0_0_10px_rgba(106,53,255,1)] min-[450px]:bg-primary min-[450px]:flex-row min-[450px]:py-2 min-[450px]:px-4 min-[450px]:rounded-full space-y-1 min-[450px]:space-y-0 min-[450px]:space-x-2">
                 <IconButton label="Hire Me" icon={<LikeIcon />} />
                 <IconButton label="Download CV" icon={<DownloadIcon />} />
               </div>
             </div>
           </div>
           {/* Right div */}
+          {/* <div className="lg:w-1/2 w-full flex items-center justify-center">
+            <div className="hidden lg:block">
+              <VerticalLanguageDesign />
+            </div>
+            <div className="hidden min-[475px]:block lg:hidden ">
+              <HorizontalLanguageDesign />
+            </div>
+            <div className="block min-[450px]:hidden">
+              <StrightLanguageDesign />
+            </div>
+          </div> */}
           <div className="lg:w-1/2 w-full flex items-center justify-center">
-            <div>
-              <Star width={50} />
-              <div className="ml-10 -mt-5">
-                <SkillCompound icon={<ReactIcon />} label="React.js" />
-              </div>
-              <div className="ml-20 mt-2">
-                <SkillCompound icon={<TailwindIcon />} label="Tailwind CSS" />
-              </div>
-              <div className="ml-[120px] mt-2">
-                <SkillCompound icon={<HtmlIcon />} label="HTML" />
-              </div>
-              <div className="ml-[270px] -mt-2">
-                <Star width={50} />
-              </div>
-              <div className="ml-[120px] -mt-4">
-                <SkillCompound icon={<ReactIcon />} label="React Native" />
-              </div>
-              <div className="ml-20 mt-2">
-                <SkillCompound icon={<NextIcon />} label="Next.js" />
-              </div>
-              <div className="ml-10 mt-2">
-                <SkillCompound icon={<TypescriptIcon />} label="Typescript" />
-              </div>
-              <div className="-mt-4">
-                <Star width={50} />
-              </div>
+            {/* Show on large screens (≥1024px) */}
+            <div className="hidden lg:block">
+              <VerticalLanguageDesign />
+            </div>
+
+            {/* Show on medium screens (≥475px and <1024px) */}
+            <div className="hidden sm:block lg:hidden">
+              <HorizontalLanguageDesign />
+            </div>
+
+            {/* Show on small screens (<475px) */}
+            <div className="block sm:hidden">
+              <StrightLanguageDesign />
             </div>
           </div>
         </div>

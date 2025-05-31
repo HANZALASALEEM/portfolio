@@ -14,6 +14,9 @@ export default {
         secondary: "#292929", // #2c2c2c
       },
       fontFamily: {},
+      boxShadow: {
+        primary: "0 0 10px rgba(106, 53, 255, 1)", // shadow-primary
+      },
     },
   },
   plugins: [],
