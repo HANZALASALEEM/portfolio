@@ -2,12 +2,12 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Divider from "../../assets/images/icons/Divider";
-import IconButton from "../common/IconButton";
+import IconButton from "../../components/common/IconButton";
 import LikeIcon from "../../assets/images/icons/LikeIcon";
 import DownloadIcon from "../../assets/images/icons/DownloadIcon";
-import VerticalLanguageDesign from "../homePageComponents/VerticalLanguageDesign";
-import HorizontalLanguageDesign from "../homePageComponents/HorizontalLanguageDesign";
-import StrightLanguageDesign from "../homePageComponents/StrightLanguageDesign";
+import VerticalLanguageDesign from "../../components/homePage/VerticalLanguageDesign";
+import HorizontalLanguageDesign from "../../components/homePage/HorizontalLanguageDesign";
+import StrightLanguageDesign from "../../components/homePage/StrightLanguageDesign";
 
 const titles = ["HANZALA SALEEM", "Website Developer", "Mobile App Developer"];
 
