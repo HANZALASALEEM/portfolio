@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import textShadow from "tailwindcss-textshadow";
 
 export default {
   content: [
@@ -17,7 +18,10 @@ export default {
       boxShadow: {
         primary: "0 0 10px rgba(106, 53, 255, 1)", // shadow-primary
       },
+      textShadow: {
+        primary: "0 0 3px rgba(106,53,255,1)",
+      },
     },
   },
-  plugins: [],
+  plugins: [textShadow],
 } satisfies Config;

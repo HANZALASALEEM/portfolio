@@ -40,21 +40,12 @@ const HeroSection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.5 }}
-                  className="text-5xl text-center text-primary font-bold"
+                  className="text-5xl text-center text-primary font-bold text-shadow-primary"
                 >
                   {titles[index]}
                 </motion.h1>
               </AnimatePresence>
             </div>
-            {/* <div className="py-1 w-full items-center flex">
-              <p className="text-white text-sm md:text-lg flex flex-wrap">
-                I&apos;m Hanzala Saleem, a passionate developer specializing in
-                modern web and mobile solutions. With expertise in building
-                responsive websites and cross-platform mobile applications, I
-                create high-performance digital experiences using technologies
-                like React.js, Next.js, and React Native.
-              </p>
-            </div> */}
             {/* Buttons */}
             <div className="my-5 w-full flex flex-col items-center justify-center">
               <div className="flex items-center justify-center flex-col min-[450px]:shadow-[0_0_10px_rgba(106,53,255,1)] min-[450px]:bg-primary min-[450px]:flex-row min-[450px]:py-2 min-[450px]:px-4 min-[450px]:rounded-full space-y-1 min-[450px]:space-y-0 min-[450px]:space-x-2">
@@ -64,29 +55,18 @@ const HeroSection = () => {
             </div>
           </div>
           {/* Right div */}
-          {/* <div className="lg:w-1/2 w-full flex items-center justify-center">
-            <div className="hidden lg:block">
-              <VerticalLanguageDesign />
-            </div>
-            <div className="hidden min-[475px]:block lg:hidden ">
-              <HorizontalLanguageDesign />
-            </div>
-            <div className="block min-[450px]:hidden">
-              <StrightLanguageDesign />
-            </div>
-          </div> */}
           <div className="lg:w-1/2 w-full flex items-center justify-center">
-            {/* Show on large screens (≥1024px) */}
+            {/* Show on large screens */}
             <div className="hidden lg:block">
               <VerticalLanguageDesign />
             </div>
 
-            {/* Show on medium screens (≥475px and <1024px) */}
+            {/* Show on medium screens */}
             <div className="hidden sm:block lg:hidden">
               <HorizontalLanguageDesign />
             </div>
 
-            {/* Show on small screens (<475px) */}
+            {/* Show on small screens */}
             <div className="block sm:hidden">
               <StrightLanguageDesign />
             </div>
@@ -98,6 +78,8 @@ const HeroSection = () => {
       <div className="w-full overflow-hidden">
         <Divider />
       </div>
+
+      {/* About Me */}
     </>
   );
 };
