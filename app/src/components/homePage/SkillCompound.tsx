@@ -7,7 +7,7 @@ interface SkillCompoundProps {
 
 const SkillCompound = ({ icon, label }: SkillCompoundProps) => {
   return (
-    <div className="relative w-40 h-10 cursor-grab">
+    <div className="relative w-40 h-10 hover:scale-105 transition-transform duration-200 cursor-pointer">
       <div className="bg-primary shadow-primary rounded-full absolute top-0 left-0 z-[1] w-40 h-10">
         <div className="flex w-full h-full justify-center items-center gap-3">
           {icon}
