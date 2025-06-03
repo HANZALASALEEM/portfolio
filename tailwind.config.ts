@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import textShadow from "tailwindcss-textshadow";
 
 export default {
   content: [
@@ -23,5 +22,5 @@ export default {
       },
     },
   },
-  plugins: [textShadow],
+  plugins: [],
 } satisfies Config;

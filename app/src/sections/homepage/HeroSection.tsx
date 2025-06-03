@@ -8,6 +8,7 @@ import DownloadIcon from "../../assets/images/icons/DownloadIcon";
 import VerticalLanguageDesign from "../../components/homePage/VerticalLanguageDesign";
 import HorizontalLanguageDesign from "../../components/homePage/HorizontalLanguageDesign";
 import StrightLanguageDesign from "../../components/homePage/StrightLanguageDesign";
+import AboutSection from "./AboutSection";
 
 const titles = ["HANZALA SALEEM", "Website Developer", "Mobile App Developer"];
 
@@ -40,7 +41,7 @@ const HeroSection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.5 }}
-                  className="text-5xl text-center text-primary font-bold text-shadow-primary"
+                  className="text-5xl text-center text-primary font-bold"
                 >
                   {titles[index]}
                 </motion.h1>
@@ -80,6 +81,7 @@ const HeroSection = () => {
       </div>
 
       {/* About Me */}
+      <AboutSection />
     </>
   );
 };
